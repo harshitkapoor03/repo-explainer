@@ -84,15 +84,15 @@ python main.py https://github.com/facebook/react
 
 ---
 
-## How it works — the GitAgent structure
+## How it works the GitAgent structure
 
-This is a **GitAgent** — the AI's entire behaviour is defined as plain text files you can read, edit, and version-control. Nothing is hidden in a black box.
+This is a **GitAgent** the AI's entire behaviour is defined as plain text files you can read, edit, and version-control. Nothing is hidden in a black box.
 
 | File | What it does |
 |------|-------------|
-| `agent.yaml` | The manifest — model, tools, skills |
+| `agent.yaml` | The manifest : model, tools, skills |
 | `SOUL.md` | Agent personality and communication style |
-| `RULES.md` | Hard constraints — must always / must never |
+| `RULES.md` | Hard constraints : must always / must never |
 | `skills/explain-repo/SKILL.md` | Step-by-step instructions for the task |
 | `knowledge/index.yaml` | Reference knowledge (frameworks, entry points) |
 | `tools/scripts/` | Python scripts that fetch from GitHub |
