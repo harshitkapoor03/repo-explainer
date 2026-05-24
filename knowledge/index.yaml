@@ -1,0 +1,36 @@
+entries:
+  - id: common-entry-points
+    title: Common entry point file names by language
+    content: |
+      Python: main.py, app.py, run.py, manage.py (Django), wsgi.py, asgi.py
+      JavaScript/TypeScript: index.js, index.ts, server.js, app.js, main.ts
+      Go: main.go (always in package main)
+      Rust: src/main.rs or src/lib.rs
+      Java: src/main/java/**/Application.java, Main.java
+      Ruby: app.rb, config.ru (Rack/Rails)
+
+  - id: framework-detection
+    title: How to detect the framework from config files
+    content: |
+      package.json with "next" → Next.js
+      package.json with "react" (no next) → plain React
+      package.json with "express" → Express.js backend
+      package.json with "vue" → Vue.js
+      requirements.txt with "django" → Django
+      requirements.txt with "flask" → Flask
+      requirements.txt with "fastapi" → FastAPI
+      go.mod with "gin-gonic/gin" → Gin (Go web framework)
+
+  - id: folder-conventions
+    title: What common folder names mean
+    content: |
+      src/ or lib/ → main source code
+      api/ → API route handlers
+      components/ → UI components (frontend)
+      models/ or schema/ → database models
+      services/ → business logic layer
+      utils/ or helpers/ → shared utility functions
+      tests/ or __tests__/ → test files
+      docs/ → documentation
+      migrations/ → database migration files
+      public/ or static/ → files served to browser

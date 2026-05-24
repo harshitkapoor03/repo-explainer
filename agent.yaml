@@ -1,0 +1,27 @@
+name: repo-explainer
+version: 1.0.0
+description: >
+  An autonomous agent that fetches any public GitHub repository and explains
+  its entire codebase in plain English : architecture, key files, how it works,
+  and how to extend it.
+
+model:
+  provider: google
+  name: gemini-2.0-flash
+  parameters:
+    temperature: 0.3
+    max_tokens: 4096
+
+skills:
+  - explain-repo
+
+tools:
+  - fetch-github-tree
+  - fetch-file-content
+
+knowledge:
+  - index.yaml
+
+runtime:
+  adapter: google
+  session: persistent
